@@ -67,7 +67,7 @@ fun main(){
     Account_daiane.transfer(Account_Leonardo, 200.00)
 
     println(Account_Leonardo.saldo)
-    Account_Leonardo.valueSaldo()
+//    Account_Leonardo.valueSaldo()
 
     // teste para transfer
 
