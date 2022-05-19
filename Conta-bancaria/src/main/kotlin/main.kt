@@ -1,5 +1,5 @@
-class Account (var saldo: Double , ){
-    private val maxToDeposit: Double = 10000.00;
+class Account (var saldo: Double ){
+    private val maxToDeposit: Double = 10000.0;
 
     private fun valueIsValid(value: Double): Boolean {
         if (value > saldo){
@@ -53,20 +53,26 @@ class Account (var saldo: Double , ){
 fun main(){
     // teste para deposito
     println ("teste para deposito")
-    val Account_Leonardo = Account(100.00)
-     println(Account_Leonardo.saldo)
-    Account_Leonardo.deposit(150.00)
-    println(Account_Leonardo.saldo)
+    val account_Leonardo = Account(100.00)
+     println("leonardo Conta = " +account_Leonardo.saldo)
+    account_Leonardo.deposit(150.00)
+    println("Depositando conta leonardo")
+    println("leonardo Conta = " +account_Leonardo.saldo)
+    print("\n\n")
 
     //teste para saque
     println("teste para saque")
-    val Account_daiane = Account(100.00)
-    println(Account_daiane.saque(900.00))
-    println(Account_daiane.saldo)
+    val account_daiane = Account(100.00)
+    println("daiane conta = " +account_daiane.saldo)
+    println("SAQUE : daiane conta"+account_daiane.saque(90.00))
+    println("daiane conta = " +account_daiane.saldo)
 
-    Account_daiane.transfer(Account_Leonardo, 200.00)
+    print("\n\n")
 
-    println(Account_Leonardo.saldo)
+    account_daiane.transfer(account_Leonardo, 10.00)
+
+    println("leonardo Conta = " +account_Leonardo.saldo)
+    println("daiane conta = " +account_daiane.saldo)
 //    Account_Leonardo.valueSaldo()
 
     // teste para transfer
