@@ -22,7 +22,6 @@ open class Animal (){
         return true
         // existem animais que botao ovo
     }
-
 }
 class Snake : Animal(){
     override fun liveWater(): Boolean {
@@ -55,8 +54,6 @@ class Bird ():Animal(){
         return false
     }
 }
-
-
 
 open class Mammal (){
 
@@ -150,6 +147,7 @@ fun main(){
     println("sabe voar = " +cobra.fly())
     println("está viva = "+ cobra.isAlive())
     println("bota ovo = "+ cobra.layEgg())
+    println("\n\n")
 
     val aguia = Hawk()
     println("Aguia")
@@ -158,6 +156,7 @@ fun main(){
     println("sabe voar = " +aguia.fly())
     println("está viva = "+ aguia.isAlive())
     println("bota ovo = "+ aguia.layEgg())
+    println("\n\n")
 
       val passarinho = Bird()
       println("passarinho")
@@ -166,6 +165,7 @@ fun main(){
       println("sabe voar = " +passarinho.fly())
       println("está viva = "+ passarinho.isAlive())
       println("bota ovo = "+ passarinho.layEgg())
+    println("\n\n")
 
     val humano = Human()
     println("humano")
@@ -174,14 +174,16 @@ fun main(){
     println("sabe voar = " +humano.fly())
     println("está viva = "+ humano.isAlive())
     println("bota ovo = "+ humano.layEgg())
+    println("\n\n")
 
     val cachorro = Dog()
-    println("humano")
+    println("cachorro")
     println("anda na terra = " + cachorro.walkEarth())
     println("vive na agua = " +cachorro.liveWater())
     println("sabe voar = " +cachorro.fly())
     println("está viva = "+ cachorro.isAlive())
     println("bota ovo = "+ cachorro.layEgg())
+    println("\n\n")
 
     val baleia = Whale()
     println("baleia")
@@ -190,6 +192,7 @@ fun main(){
     println("sabe voar = " +baleia.fly())
     println("está viva = "+ baleia.isAlive())
     println("bota ovo = "+ baleia.layEgg())
+    println("\n\n")
 
     val einstein = Einstein()
     println("baleia")
@@ -198,6 +201,7 @@ fun main(){
     println("sabe voar = " +einstein.fly())
     println("está viva = "+ einstein.isAlive())
     println("bota ovo = "+ einstein.layEgg())
+    println("\n\n")
 
       val peguim = Penguim()
       println("penguim")
@@ -206,6 +210,7 @@ fun main(){
       println("sabe voar = " +peguim.fly())
       println("está viva = "+ peguim.isAlive())
       println("bota ovo = "+ peguim.layEgg())
+    println("\n\n")
 
       val bat = Bat()
       println("bat")
