@@ -2,11 +2,15 @@ class OperandoNumeros(var n1: Double, var n2: Double){
     fun sumNumbers() : Double {
         return n1 + n2
     }
-
     fun substractNumbers() : Double{
         return n1 - n2
     }
-
+    fun MultiplicationNumbers() :Double{
+        return n1 * n2
+    }
+    fun divisionNumber(): Double{
+        return n1 / n2
+    }
 }
 
 fun main(){
