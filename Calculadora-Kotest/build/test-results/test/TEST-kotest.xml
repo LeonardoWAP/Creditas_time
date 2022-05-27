@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kotest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-27T13:52:55" hostname="CRED-2Y4CDM3" time="0.007">
+  <properties/>
+  <testcase name="testano mult" classname="kotest" time="0.006"/>
+  <testcase name="testando div" classname="kotest" time="0.005"/>
+  <testcase name="testando sub" classname="kotest" time="0.008"/>
+  <testcase name="testando Soma" classname="kotest" time="0.01"/>
+  <system-out><![CDATA[[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
