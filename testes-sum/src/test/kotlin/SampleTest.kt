@@ -24,7 +24,6 @@ class SampleTest {
     fun testdivision(){
         val divide = OperandoNumeros(10.0, 2.0).divisionNumber()
         assertEquals(5.0,divide)
-
     }
 
 }
