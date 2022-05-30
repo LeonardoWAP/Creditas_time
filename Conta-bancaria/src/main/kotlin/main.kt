@@ -45,34 +45,35 @@ class Account (var saldo: Double ){
             println("Transferencia com Erro! Desculpe seu saldo é menor que o saque")
         }
     }
+    // faltou criar uma função de printar o saldo...
 
 }
 
 // Deve-se ter formas de se recuperar o valor do saldo da conta ???
 
 fun main(){
-    // teste para deposito
-    println ("teste para deposito")
-    val account_Leonardo = Account(100.00)
-     println("leonardo Conta = " +account_Leonardo.saldo)
-    account_Leonardo.deposit(150.00)
-    println("Depositando conta leonardo")
-    println("leonardo Conta = " +account_Leonardo.saldo)
-    print("\n\n")
+//    // teste para deposito
+//    println ("teste para deposito")
+//    val account_Leonardo = Account(100.00)
+//     println("leonardo Conta = " +account_Leonardo.saldo)
+//    account_Leonardo.deposit(150.00)
+//    println("Depositando conta leonardo")
+//    println("leonardo Conta = " +account_Leonardo.saldo)
+//    print("\n\n")
 
     //teste para saque
     println("teste para saque")
     val account_daiane = Account(100.00)
     println("daiane conta = " +account_daiane.saldo)
-    println("SAQUE : daiane conta"+account_daiane.saque(90.00))
+    println("SAQUE : daiane conta"+account_daiane.saque(190.00))
     println("daiane conta = " +account_daiane.saldo)
 
     print("\n\n")
 
-    account_daiane.transfer(account_Leonardo, 10.00)
-
-    println("leonardo Conta = " +account_Leonardo.saldo)
-    println("daiane conta = " +account_daiane.saldo)
+//    account_daiane.transfer(account_Leonardo, 10.00)
+//
+//    println("leonardo Conta = " +account_Leonardo.saldo)
+//    println("daiane conta = " +account_daiane.saldo)
 //    Account_Leonardo.valueSaldo()
 
     // teste para transfer

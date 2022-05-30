@@ -103,7 +103,7 @@ class Whale ():Mammal(){
     }
 
 }
-class Einstein ():Mammal(){
+class Einstein ():Mammal() {
     override fun liveWater(): Boolean {
         return false
     }
@@ -131,7 +131,8 @@ class Bat():Animal(){
 }
 
 
-
+// interface é uma maneira que o kotlin colocou para proteger o programador de herança multipla
+//
 
 
 

@@ -1,18 +1,3 @@
-class Rectangle(width: Int, height: Int, color: String) {
-    var width: Int = width;
-    var height:Int = height;
-    var color: String = color;
-// metodo calcArea
-    fun calcArea() : Int {
-        return height  * width
-    }
-// metodo StringTo
-    fun stringTo() : String {
-        //receber um shape e retornar string com atributos.
-        // função recebe rectangle e printa de acordo com o tamanho largura e area e cor
-        return "width = ${width} height = ${height} color = ${color} Area =${calcArea()}"
-    }
-}
 
 class Rectangle1(var width: Int, var height: Int ,var color : String){
 // metodo é uma função dentro de uma classe - os objetos da classe podem realizar a ação dessa função
@@ -28,7 +13,7 @@ class Rectangle1(var width: Int, var height: Int ,var color : String){
 
 
 fun main() {
-    val rectangle1 = Rectangle(color= "Red", width = 5, height = 5)
+    val rectangle1 = Rectangle1(color= "Red", width = 5, height = 5)
     // rectangle 1 é um objeto da classe que tem todos os metodos
 
     println(rectangle1.calcArea())
@@ -38,7 +23,7 @@ fun main() {
     println(rectangle1.stringTo())
 
 
-    val rectangle2 = Rectangle(color="green", width = 10 , height = 10)
+    val rectangle2 = Rectangle1(color="green", width = 10 , height = 10)
     println(rectangle2.calcArea())
     //println(rectangle2.height)
     //println(rectangle2.width)

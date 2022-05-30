@@ -7,7 +7,6 @@ class Car (var motor : Motor ){
             return ("B")
         }
         else if (!motor.isEnvironmentalFriendly()){
-            println("Nota C")
             return ("C")
         }
         return ("ERRO")
@@ -19,16 +18,11 @@ class Car (var motor : Motor ){
         }
         return false
     }
-
-
 }
 interface Motor {
-
     fun isEnvironmentalFriendly(): Boolean;
     fun useFlammableFuel(): Boolean;
     fun useFossilFuel(): Boolean;
-
-
 }
 
 class EletricEngine () :Motor{
