@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Kotest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-30T13:47:34" hostname="CRED-2Y4CDM3" time="0.006">
+  <properties/>
+  <testcase name="testando buzz" classname="Kotest" time="0.004"/>
+  <testcase name="testando fizzbuzz" classname="Kotest" time="0.008"/>
+  <testcase name="testando return" classname="Kotest" time="0.004"/>
+  <testcase name="testando fizz" classname="Kotest" time="0.006"/>
+  <system-out><![CDATA[FizzBuzz
+fizz
+buzz
+4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
