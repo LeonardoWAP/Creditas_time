@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kotest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-06-01T14:47:13" hostname="CRED-2Y4CDM3" time="0.004">
+  <properties/>
+  <testcase name="testando saque" classname="kotest" time="0.003"/>
+  <testcase name="testando transfer" classname="kotest" time="0.004"/>
+  <testcase name="testando Deposito" classname="kotest" time="0.006"/>
+  <system-out><![CDATA[[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+[WARN] When comparing doubles consider using tolerance, eg: a shouldBe (b plusOrMinus c)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
