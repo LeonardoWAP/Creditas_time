@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="accounttest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-06-01T14:14:34" hostname="CRED-2Y4CDM3" time="0.016">
+  <properties/>
+  <testcase name="testeSaque()" classname="accounttest" time="0.013"/>
+  <testcase name="testDeposit()" classname="accounttest" time="0.001"/>
+  <testcase name="testeTransfer()" classname="accounttest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

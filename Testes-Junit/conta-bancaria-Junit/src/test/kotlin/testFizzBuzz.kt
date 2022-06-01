@@ -1,22 +1,31 @@
-import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.*
+
 import org.junit.jupiter.api.Test
 
-class testFizzBuzz {
+class accounttest{
+
     @Test
-    fun TestDeposit(){
-        Assertions.assertEquals("fizzbuzz", FizzBuzz(30))
+    fun testDeposit(){
+        val account = Account(100.00)
+        account.deposit(10.00)
+        assertEquals(110.00,account.saldo)
+
     }
+
     @Test
-    fun fizz(){
-        Assertions.assertEquals("fizz", FizzBuzz(3))
+    fun testeSaque(){
+        val account = Account(100.00)
+        account.saque(10.00)
+        assertEquals(90.00,account.saldo)
+
     }
+
     @Test
-    fun buzz(){
-        Assertions.assertEquals("buzz", FizzBuzz(5))
-    }
-    @Test
-    fun returnNumber(){
-        Assertions.assertEquals(4, FizzBuzz(4))
+    fun testeTransfer(){
+        val account = Account(100.00)
+        val account2 = Account(10.00)
+        account.transfer(account2,100.00)
+        assertEquals(110.00,account2.saldo)
     }
 
 
