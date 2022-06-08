@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testcar" tests="5" skipped="0" failures="0" errors="0" timestamp="2022-06-08T17:32:27" hostname="CRED-2Y4CDM3" time="0.024">
+  <properties/>
+  <testcase name="CarFlex()" classname="testcar" time="0.019"/>
+  <testcase name="eletriccar()" classname="testcar" time="0.001"/>
+  <testcase name="CarGasoline()" classname="testcar" time="0.0"/>
+  <testcase name="CarHydrogenio()" classname="testcar" time="0.0"/>
+  <testcase name="CarGas()" classname="testcar" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
