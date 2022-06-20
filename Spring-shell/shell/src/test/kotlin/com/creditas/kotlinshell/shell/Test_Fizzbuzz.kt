@@ -1,26 +1,27 @@
-package com.creditas.kotlinshell.shell
 
-import com.creditas.kotlinshell.shell.example.Calculadora
+
+
 import com.creditas.kotlinshell.shell.example.FizzBuzz
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
 class testFizzBuzz {
     @Test
-    fun fizzbuzz(){
-        assertEquals("fizzbuzz", FizzBuzz(30))
+    fun fizzbuzz() {
+
+        Assertions.assertEquals("fizzbuzz", FizzBuzz().fizzbuzz(30))
     }
     @Test
     fun fizz(){
-        assertEquals("fizz", FizzBuzz(3))
+        Assertions.assertEquals("fizz", FizzBuzz().fizzbuzz(3))
     }
     @Test
     fun buzz(){
-        assertEquals("buzz", FizzBuzz(5))
+        Assertions.assertEquals("buzz", FizzBuzz().fizzbuzz(5))
     }
     @Test
     fun returnNumber(){
-        assertEquals(4, FizzBuzz(4))
+        Assertions.assertEquals(4, FizzBuzz().fizzbuzz(4))
     }
 
 
