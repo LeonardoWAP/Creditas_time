@@ -15,18 +15,18 @@ class TesteCalculadora {
     @Test
     fun sub(){
         val subtrai = Calculadora ()
-        assertEquals(1 ,subtrai.sub(2,1))
+        assertEquals(1 ,subtrai.subtraction(2,1))
     }
 
     @Test
     fun mult(){
         val multiplica = Calculadora()
-        assertEquals(10,multiplica.mult(2,5))
+        assertEquals(10,multiplica.multiplication(2,5))
     }
     @Test
     fun div(){
         val divisao = Calculadora()
-        assertEquals(5,divisao.div(10,2))
+        assertEquals(5,divisao.division(10,2))
     }
 
 }
