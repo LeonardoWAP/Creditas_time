@@ -12,22 +12,22 @@ class TesteCalculadora {
         assertEquals(3 ,somando.add(2,1))
     }
 
-    @Test
-    fun sub(){
-        val subtrai = Calculadora ()
-        assertEquals(1 ,subtrai.sub(2,1))
-    }
-
-    @Test
-    fun mult(){
-        val multiplica = Calculadora()
-        assertEquals(10,multiplica.mult(2,5))
-    }
-    @Test
-    fun div(){
-        val divisao = Calculadora()
-        assertEquals(5,divisao.div(10,2))
-    }
+//    @Test
+//    fun sub(){
+//        val subtrai = Calculadora ()
+//        assertEquals(1 ,subtrai.sub(2,1))
+//    }
+//
+//    @Test
+//    fun mult(){
+//        val multiplica = Calculadora()
+//        assertEquals(10,multiplica.mult(2,5))
+//    }
+//    @Test
+//    fun div(){
+//        val divisao = Calculadora()
+//        assertEquals(5,divisao.div(10,2))
+//    }
 
 }
 
