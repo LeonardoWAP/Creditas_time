@@ -1,7 +1,9 @@
 package com.creditas.kotlinshell.shell.example
 
+import org.springframework.stereotype.Component
 
 
+@Component
 class A(var b : B , var f : F ){
     fun greet(){
         println("I am A")
@@ -10,6 +12,7 @@ class A(var b : B , var f : F ){
     }
 }
 
+@Component
 class B(var c : C , var d : D ){
     fun greet(){
         println("I am B")
@@ -18,12 +21,14 @@ class B(var c : C , var d : D ){
     }
 }
 
+@Component
 class C(){
     fun greet(){
         println("I am C")
     }
 }
 
+@Component
 class D(var e : E ){
     fun greet(){
         println("I am D")
@@ -31,12 +36,14 @@ class D(var e : E ){
     }
 }
 
+@Component
 class E(){
     fun greet(){
         println("I am E")
     }
 }
 
+@Component
 class F(var g : G){
     fun greet(){
         println("I am F")
@@ -45,6 +52,7 @@ class F(var g : G){
 }
 
 
+@Component
 class G(var e : E , var h : H ){
     fun greet(){
         println("I am G")
@@ -53,6 +61,7 @@ class G(var e : E , var h : H ){
     }
 }
 
+@Component
 class H(){
     fun greet(){
         println("I am H")

@@ -8,9 +8,8 @@ import org.springframework.shell.standard.ShellMethod
 @ShellComponent
 class CalculatorCommand(val calculadora : Calculadora) {
     @ShellMethod("Add two integers together.")
-
     fun sum(a: Int, b: Int): Int{
-        return calculadora.add(a,b)
+        return calculadora.add(a, b)
     }
 
     @ShellMethod("Sub two integers together.")

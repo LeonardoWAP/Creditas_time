@@ -6,15 +6,10 @@ import org.springframework.shell.standard.ShellMethod
 
 
 @ShellComponent
-class GreetCommand {
-    var h = H()
-    var e = E()
-    var g = G(e , h)
-    var d = D(e)
-    var c = C()
-    var b = B(c , d)
-    var f = F(g)
-    var a = A(b , f)
+class GreetCommand (var a :A,
+                    var b :B,
+                    var f :F
+                    ){
 
 
     @ShellMethod("A")

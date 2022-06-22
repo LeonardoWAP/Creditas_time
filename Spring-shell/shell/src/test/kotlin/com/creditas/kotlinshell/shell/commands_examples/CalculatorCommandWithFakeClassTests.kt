@@ -12,13 +12,16 @@ import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
 import org.mockito.junit.MockitoJUnitRunner
 
-@RunWith(MockitoJUnitRunner::class)
 class CalculatorCommandWithFakeClassTests {
 
     class FakeCalculator(): Calculadora() {
         var fakeReturn: Int = 0
 
+        val calledValues: MutableList<List<Int>> = mutableListOf()
+
         override fun add(a: Int, b: Int): Int {
+            calledValues.add(listOf(a, b))
+
             return fakeReturn
         }
     }
@@ -31,7 +34,7 @@ class CalculatorCommandWithFakeClassTests {
 
         fakeCalculator.fakeReturn = 5
 
-        assertEquals(5, command.sum(1, 4))
+        assertEquals(5, command.sum(1, 9))
     }
 
     @Test
