@@ -6,8 +6,8 @@ import org.springframework.shell.standard.ShellComponent
 import org.springframework.shell.standard.ShellMethod
 
 @ShellComponent
-class ContaBancariaCommand {
-    val ohira_account = Account(0)
+class ContaBancariaCommand (val ohira_account: Account = Account(0)){
+//    val ohira_account = Account(0)
 
     @ShellMethod("consulta")
     fun consulta(): Int{

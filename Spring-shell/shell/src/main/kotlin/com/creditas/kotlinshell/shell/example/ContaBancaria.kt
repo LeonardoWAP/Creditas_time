@@ -34,12 +34,13 @@ class Account (var saldo: Int){
     }
 
 
-    fun saque(saque: Int){
+    fun saque(saque: Int):Int {
         if (valueIsValid(saque)){
             saldo -= saque
         } else{
             println("Saque com Erro: Desculpe seu saldo é menor que o saque")
         }
+        return saldo
     }
 
 
@@ -52,7 +53,3 @@ class Account (var saldo: Int){
         }
     }
 }
-
-
-
-

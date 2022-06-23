@@ -12,6 +12,7 @@ class GreetCommand (var a :A,
                     ){
 
 
+
     @ShellMethod("A")
     fun greeta() {
         a.greet()
