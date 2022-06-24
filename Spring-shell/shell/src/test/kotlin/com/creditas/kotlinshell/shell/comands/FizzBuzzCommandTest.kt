@@ -23,11 +23,20 @@ class FizzBuzzCommandTest {
 
     @Test
     fun `(Mock) When the FizzBuzz command is called, it returns the fizzbuzz return`(){
+        //arrange
         val command = FizzbuzzCommand(fizz_buzz)
 
+        //stub - trocar retorno
         Mockito.`when`(fizz_buzz.fizzbuzz(2)).thenReturn("fdd")
 
-        TestCase.assertEquals("fdd", command.fizzbuzz(2))
+        //act
+        val result = command.fizzbuzz(2)
+
+        //assert
+        TestCase.assertEquals("fdd", result)
+
+        //spy - verifica se o metodo foi chamado com o parametro , no caso 2 .
+        Mockito.`verify`(fizz_buzz).fizzbuzz(2)
 
     }
 }

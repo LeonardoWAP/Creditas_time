@@ -1,7 +1,6 @@
 package com.creditas.kotlinshell.shell.comands
 
 import com.creditas.kotlinshell.shell.example.Account
-import com.creditas.kotlinshell.shell.example.FizzBuzz
 import junit.framework.TestCase
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -23,17 +22,45 @@ class ContaBancariaCommandTest {
     lateinit var account: Account
 
     @Test
-    fun `(Mock) When the ContaBancariaCommand is called, it returns the account saque return`(){
+    fun `When ContaBancariaCommand is called and the depositar is used, we have to return the deposit `(){
         //arrange
         val command = ContaBancariaCommand(account)
-        Mockito.`when`(account.saque(5)).thenReturn(0)
 
         //act
-        val result = command.sacar(5)
+        command.depositar(5)
 
         //assert
-        TestCase.assertEquals(0, result)
+        Mockito.verify(account).deposit(5)
     }
+
+    @Test
+    fun `When ContaBancariaCommand is called and the sacar is used, we have to return the saque`(){
+        //arrange
+        val command = ContaBancariaCommand(account)
+
+        //act
+        command.sacar(5)
+
+        //assert
+        Mockito.verify(account).saque(5)
+    }
+
+    @Test
+    fun `When the ContaBancariaCommand is called, it returns the fizzbuzz return`(){
+        //arrange
+        val command = ContaBancariaCommand(account)
+
+        //stub - trocar retorno
+        Mockito.`when`(account.consulta_saldo()).thenReturn(2)
+
+        //act
+        val result = command.consulta()
+
+        //assert
+        TestCase.assertEquals(2, result)
+    }
+
+
 }
 
 // AAA -  arrange act assert

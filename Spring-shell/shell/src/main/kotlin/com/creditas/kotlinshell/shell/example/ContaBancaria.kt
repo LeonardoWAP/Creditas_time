@@ -6,8 +6,11 @@ import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.stereotype.Component
 
+val maxValueToDeposit = 10000
 
-class Account (var saldo: Int){
+@Component
+class Account (){
+    private var saldo = 0
     private val maxToDeposit: Int = 10000;
 
     private fun valueIsValid(value: Int): Boolean {
@@ -22,9 +25,9 @@ class Account (var saldo: Int){
     }
 
 
-    fun deposit(deposit: Int):Any{
+    fun deposit(deposit: Int): String{
 
-        if(deposit < maxToDeposit){
+        if(deposit < maxValueToDeposit){
             saldo += deposit
         } else {
             println("Deposito com Erro :Desculpe não podemos depositar valores acima de 10.000,00")

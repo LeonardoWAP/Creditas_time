@@ -8,24 +8,26 @@ import org.junit.jupiter.api.Test
 class accounttest{
     @Test
     fun testDeposit(){
-        val account = Account(100)
+        val account = Account()
         account.deposit(10)
-        assertEquals(110,account.saldo)
+        assertEquals(10,account.consulta_saldo())
 
     }
 
     @Test
     fun testeSaque(){
-        val account = Account(100)
+        val account = Account()
+        account.deposit(100)
         account.saque(10)
-        assertEquals(90,account.saldo)
+        assertEquals(90,account.consulta_saldo())
     }
 
     @Test
     fun testeTransfer(){
-        val account = Account(100)
-        val account2 = Account(10)
+        val account = Account()
+        val account2 = Account()
+        account.deposit(100)
         account.transfer(account2,100)
-        assertEquals(110,account2.saldo)
+        assertEquals(100,account2.consulta_saldo())
     }
 }
