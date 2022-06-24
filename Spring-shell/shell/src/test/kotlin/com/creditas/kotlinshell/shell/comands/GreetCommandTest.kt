@@ -39,7 +39,6 @@ class GreetCommandTest {
         val command = GreetCommand(a , b , f)
 
         command.greeta()
-
         // verifico quantas vezes a classe A foi chamada
         Mockito.verify(a, Mockito.times(1)).greet()
 
