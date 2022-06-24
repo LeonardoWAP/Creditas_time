@@ -11,7 +11,6 @@ class TesteCalculadora {
         val somando = Calculadora()
         assertEquals(3 ,somando.add(2,1))
     }
-
     @Test
     fun sub(){
         val subtrai = Calculadora ()

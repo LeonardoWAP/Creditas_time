@@ -60,7 +60,6 @@ class G(var e : E , var h : H ){
         h.greet()
     }
 }
-
 @Component
 class H(){
     fun greet(){

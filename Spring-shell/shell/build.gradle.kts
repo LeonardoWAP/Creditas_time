@@ -21,6 +21,7 @@ dependencies {
 	implementation("org.springframework.shell:spring-shell-starter:2.0.1.RELEASE")
 	implementation("junit:junit:4.13.1")
 	implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 tasks.withType<KotlinCompile> {
