@@ -19,12 +19,7 @@ class GreetCommandTest {
     //@MockBean
     @Mock
     lateinit var a : A
-    @Mock
-    lateinit var b : B
-    @Mock
-    lateinit var f : F
-    @Mock
-    lateinit var e : E
+
 
     // oque preciso verificar em GreetCommand
     // preciso verificar se os parametros estão chegando
@@ -33,14 +28,14 @@ class GreetCommandTest {
 
     // uma das ideias para testar é verificar todas as classes quantas vezes elas rodam
     // todas tem que rodar 1 vez só a classe E que rodaria 2 x
-    //
+
     @Test
     fun `When the GreetCommand is called, it calls the greet with the orthers class`() {
-        val command = GreetCommand(a , b , f)
+        val command = GreetCommand(a)
 
-        command.greeta()
+        command.greet()
+
         // verifico quantas vezes a classe A foi chamada
         Mockito.verify(a, Mockito.times(1)).greet()
-
     }
 }

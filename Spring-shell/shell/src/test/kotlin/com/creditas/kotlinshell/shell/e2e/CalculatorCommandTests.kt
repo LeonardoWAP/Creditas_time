@@ -30,4 +30,20 @@ class CalculatorCommandTests {
 
         assertEquals(4, output)
     }
+
+    @Test
+    fun `When calling the "mult" with two numbers, it returns the multiplication of first by the second`() {
+        val output = shell.evaluate { "mult 5 1" }
+
+        assertEquals(5, output)
+    }
+
+    @Test
+    fun `When calling the "div" with two numbers, it returns the division of first by the second`() {
+        val output = shell.evaluate { "div 10 2" }
+
+        assertEquals(5, output)
+    }
+
+
 }

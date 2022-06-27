@@ -6,24 +6,9 @@ import org.springframework.shell.standard.ShellMethod
 
 
 @ShellComponent
-class GreetCommand (var a :A,
-                    var b :B,
-                    var f :F
-                    ){
-
-
+class GreetCommand (var a :A){
     @ShellMethod("A")
-    fun greeta() {
+    fun greet() {
         a.greet()
-    }
-
-    @ShellMethod("B")
-    fun greetb() {
-        b.greet()
-    }
-
-    @ShellMethod("F")
-    fun greetf() {
-        f.greet()
     }
 }

@@ -5,65 +5,65 @@ import org.springframework.stereotype.Component
 
 @Component
 class A(var b : B , var f : F ){
-    fun greet(){
-        println("I am A")
+    fun greet(): String {
         b.greet()
         f.greet()
+        return "I am A"
     }
 }
 
 @Component
 class B(var c : C , var d : D ){
-    fun greet(){
-        println("I am B")
+    fun greet(): String {
         c.greet()
         d.greet()
+        return "I am B"
     }
 }
 
 @Component
 class C(){
-    fun greet(){
-        println("I am C")
+    fun greet(): String {
+        return "I am C"
     }
 }
 
 @Component
 class D(var e : E ){
-    fun greet(){
-        println("I am D")
+    fun greet(): String {
         e.greet()
+        return "I am D"
     }
 }
 
 @Component
 class E(){
-    fun greet(){
-        println("I am E")
+    fun greet(): String {
+        return "I am E"
     }
 }
 
 @Component
 class F(var g : G){
-    fun greet(){
-        println("I am F")
+    fun greet(): String {
         g.greet()
+        return "I am F"
     }
 }
 
 
 @Component
 class G(var e : E , var h : H ){
-    fun greet(){
-        println("I am G")
+    fun greet(): String {
         e.greet()
         h.greet()
+        return "I am G"
     }
 }
 @Component
 class H(){
-    fun greet(){
-        println("I am H")
+    fun greet(): String {
+        return "I am H"
     }
 }
 
