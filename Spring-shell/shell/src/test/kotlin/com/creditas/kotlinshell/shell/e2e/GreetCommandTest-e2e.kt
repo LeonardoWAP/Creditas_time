@@ -21,7 +21,7 @@ class `GreetCommandTest-e2e` {
         fun `When calling the "greet" it returns Strings according to the tree`() {
             val output = shell.evaluate { "greet" }
 
-            TestCase.assertEquals(" ", output)
+            TestCase.assertEquals("I am A", output)
         }
 
 }

@@ -8,7 +8,7 @@ import org.springframework.shell.standard.ShellMethod
 @ShellComponent
 class GreetCommand (var a :A){
     @ShellMethod("A")
-    fun greet() {
-        a.greet()
+    fun greet():String {
+       return a.greet()
     }
 }

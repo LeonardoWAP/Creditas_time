@@ -8,6 +8,7 @@ class A(var b : B , var f : F ){
     fun greet(): String {
         b.greet()
         f.greet()
+        println("I am A")
         return "I am A"
     }
 }
@@ -17,6 +18,7 @@ class B(var c : C , var d : D ){
     fun greet(): String {
         c.greet()
         d.greet()
+        println("I am B")
         return "I am B"
     }
 }
@@ -24,6 +26,7 @@ class B(var c : C , var d : D ){
 @Component
 class C(){
     fun greet(): String {
+        println("I am C")
         return "I am C"
     }
 }
@@ -32,6 +35,7 @@ class C(){
 class D(var e : E ){
     fun greet(): String {
         e.greet()
+        println("I am D")
         return "I am D"
     }
 }
@@ -39,6 +43,7 @@ class D(var e : E ){
 @Component
 class E(){
     fun greet(): String {
+        println("I am E")
         return "I am E"
     }
 }
@@ -47,6 +52,7 @@ class E(){
 class F(var g : G){
     fun greet(): String {
         g.greet()
+        println("I am F")
         return "I am F"
     }
 }
@@ -57,12 +63,14 @@ class G(var e : E , var h : H ){
     fun greet(): String {
         e.greet()
         h.greet()
+        println("I am G")
         return "I am G"
     }
 }
 @Component
 class H(){
     fun greet(): String {
+        println("I am H")
         return "I am H"
     }
 }
