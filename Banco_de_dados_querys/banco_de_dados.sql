@@ -17,7 +17,7 @@ where role = 'Product Manager ' and CURRENT_DATE - hire_date < 360
 
 --qual a pessoa com mais tempo na Creditas e quanto tempo tem
 
-SELECT people.name, people.hire_date FROM people
+SELECT people.name, (CURRENT_DATE - hire_date)/30 as quantos_meses FROM people
 WHERE hire_date = (
 	SELECT MIN(hire_date)
 	from people
