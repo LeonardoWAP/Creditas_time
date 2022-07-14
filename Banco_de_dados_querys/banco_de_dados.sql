@@ -53,7 +53,9 @@ GROUP BY squads.name
 
 
 --Para cada Tribe, qual o total de pessoas trabalhando nela (Cuidado para não contas pessoas cross duas vezes)
-avg (people.name)
+
+select count (distinct people.name) from people
+inner join  people_squad
 	on people.id = people_squad.people_id
 inner join squads 
 	on people_squad.squad_id = squads.id
