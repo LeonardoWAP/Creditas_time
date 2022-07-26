@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mercadolivro?createDatabaseIfNotExist=true
+    username: postgres
+    password: postgres
+  jackson:
+    default-property-inclusion: non_null
+
+jwt:
+   secret: 9c8ea69c-0b2b-4cc9-b3cc-bc7f720d8cde
+   expiration: 99999
+
