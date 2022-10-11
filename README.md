@@ -1,5 +1,3 @@
-# Creditas_time
-Esse diretorio foi feito exclusivamente para o treinamento das ferramentas do time ( Kotlin ) 
-Notion com todas as anotações : 
-<br>
-https://www.notion.so/Estudo-de-kotlin-16f23c4b17de434e90a20ceb91432e91
+# Treinamento de Kotlin com Orientação a Objeto, Banco de dados e Testes
+
+Neste repositório temos registros de estudos sobre Kotlin, focados em aprender sobre Orientação a Objeto, criação de banco de dados e realização de testes unitários com mocckito
